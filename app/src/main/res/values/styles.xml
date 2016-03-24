@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+    <style name="Toolbar_title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_toolbar</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="Text_description">
+        <item name="android:textSize">@dimen/text_size_description</item>
+        <item name="android:textColor">#0e0e0e</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="Text_offer">
+        <item name="android:textSize">@dimen/text_size_description</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="Text_plain">
+        <item name="android:textSize">@dimen/text_size_description</item>
+        <item name="android:textColor">#838383</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="Text_main">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">#0e0e0e</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+</resources>

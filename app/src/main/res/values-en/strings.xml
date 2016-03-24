@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Yalantis_Task1</string>
+    <string name="title">UKRAIN</string>
+    <string name="valid_until">Valid up</string>
+    <string name="cost_of">Price</string>
+    <string name="transport">Transport</string>
+    <string name="offer">Hot</string>
+    <string name="city">Lviv</string>
+    <string name="phone">phon:</string>
+    <string name="included">Included</string>
+    <string name="date">03/26/2016</string>
+    <string name="uah">$60</string>
+    <string name="number">(056) 322–22–33</string>
+    <string name="description">Lviv - a city which captivates at first sight.
+        This is one of the most beautiful cities in Europe.</string>
+    <string name="button_back">Back</string>
+    <string name="photo_number">Photo #</string>
+    <string name="descr">Description</string>
+</resources>

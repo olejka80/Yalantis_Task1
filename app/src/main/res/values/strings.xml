@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">Yalantis_Task1</string>
+    <string name="title">УКРАЇНА</string>
+    <string name="valid_until">Діє до</string>
+    <string name="cost_of">Вартість</string>
+    <string name="transport">Проїзд</string>
+    <string name="offer">Гаряча</string>
+    <string name="city">Львів</string>
+    <string name="phone">тел.:</string>
+    <string name="included">Входить</string>
+    <string name="date">26.03.2016</string>
+    <string name="uah">1 500 грн</string>
+    <string name="number" translatable="false">(056) 322–22–33</string>
+    <string name="description">Львів - місто, яке зачаровує з першого погляду.
+       Це одне із найпрекрасніших міст Європи.</string>
+    <string name="button_back">Назад</string>
+    <string name="photo_number">Фото №</string>
+    <string name="descr">Опис міста</string>
+</resources>
