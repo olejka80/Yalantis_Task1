@@ -16,4 +16,9 @@
     <string name="button_back">Назад</string>
     <string name="photo_number">Фото №</string>
     <string name="descr">Опис міста</string>
+    <string name="uri_photo_1">http://wyr.com.ua/files/lviv/jura_9.jpg</string>
+    <string name="uri_photo_2">http://vsitury.com.ua/uploads/48/2588/P5.jpg</string>
+    <string name="uri_photo_3">http://vsitury.com.ua/uploads/48/2786/P2.jpg</string>
+    <string name="uri_photo_4">http://visittoukraine.com/uploads/images/news/lvov(3).jpg</string>
+    <string name="uri_photo_5">http://vsitury.com.ua/uploads/107/3175/P4.jpg</string>
 </resources>

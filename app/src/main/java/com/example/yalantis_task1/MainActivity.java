@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
 
         ArrayList<Uri> photos = new ArrayList<>();
-        photos.add(Uri.parse("http://wyr.com.ua/files/lviv/jura_9.jpg"));
-        photos.add(Uri.parse("http://vsitury.com.ua/uploads/48/2588/P5.jpg"));
-        photos.add(Uri.parse("http://vsitury.com.ua/uploads/48/2786/P2.jpg"));
-        photos.add(Uri.parse("http://visittoukraine.com/uploads/images/news/lvov(3).jpg"));
-        photos.add(Uri.parse("http://vsitury.com.ua/uploads/107/3175/P4.jpg"));
+        photos.add(Uri.parse(getResources().getString(R.string.uri_photo_1)));
+        photos.add(Uri.parse(getResources().getString(R.string.uri_photo_2)));
+        photos.add(Uri.parse(getResources().getString(R.string.uri_photo_3)));
+        photos.add(Uri.parse(getResources().getString(R.string.uri_photo_4)));
+        photos.add(Uri.parse(getResources().getString(R.string.uri_photo_5)));
 
         MyRecyclerAdapter myRecyclerAdapter = new MyRecyclerAdapter(photos, this, this);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
