@@ -1,5 +1,6 @@
 # Yalantis_Task1
-First task for Yalantis
+
+UI mistakes & suggestions  for their solution.
 
 In my opinion, the following UI mistakes in the screen and
 suggestions to solve them:
