@@ -26,14 +26,13 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         toolbar.setTitle(R.string.title);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, getResources()
-                            .getString(R.string.button_back), Toast.LENGTH_SHORT).show();
-                    finish();
-                }
-            });
-
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, getResources()
+                        .getString(R.string.button_back), Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
 
         ArrayList<Uri> photos = new ArrayList<>();
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_1)));
@@ -42,14 +41,14 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_4)));
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_5)));
 
-        MyRecyclerAdapter myRecyclerAdapter = new MyRecyclerAdapter(photos, this, this);
+        RecyclerAdapter recyclerAdapter = new RecyclerAdapter(photos, this, this);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager
                 .HORIZONTAL, false);
         if (recyclerView != null) {
             recyclerView.setLayoutManager(linearLayoutManager);
-            recyclerView.setAdapter(myRecyclerAdapter);
+            recyclerView.setAdapter(recyclerAdapter);
 
         }
 
@@ -61,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         if (tvDescription != null) {
             tvDescription.setOnClickListener(this);
         }
-
     }
 
     @Override
@@ -84,6 +82,5 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                         .getString(R.string.descr), Toast.LENGTH_SHORT).show();
                 break;
         }
-
     }
 }

@@ -7,25 +7,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class MyRecyclerAdapter extends RecyclerView.Adapter {
+public class RecyclerAdapter extends RecyclerView.Adapter {
     private ArrayList<Uri> mPhoto;
     private Context mContext;
     private OnItemClickListener mListener;
 
-    public MyRecyclerAdapter(ArrayList<Uri> photos, Context context, OnItemClickListener listener) {
-        this.mPhoto = photos;
-        this.mContext = context;
-        this.mListener = listener;
+    public RecyclerAdapter(ArrayList<Uri> photos, Context context, OnItemClickListener listener) {
+        mPhoto = photos;
+        mContext = context;
+        mListener = listener;
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_item,
-                parent,false);
+                parent, false);
         return new ViewHolder(view);
     }
 
@@ -36,18 +37,18 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
                 .load(mPhoto.get(position))
                 .error(R.mipmap.ic_launcher)
                 .placeholder(R.mipmap.ic_launcher)
-                .resize(800,700)
+                .resize(800, 700)
                 .centerCrop()
                 .into(viewHolder.ivPhoto);
 
         viewHolder.ivPhoto.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        if (mListener != null) {
-            mListener.OnPhotoClick(position);
-        }
-    }
-});
+            @Override
+            public void onClick(View v) {
+                if (mListener != null) {
+                    mListener.OnPhotoClick(position);
+                }
+            }
+        });
 
     }
 
