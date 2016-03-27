@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-
+//[Comment] There are UI bugs on Nexus 5. Text is cutted of in bottom. Also there are A LOT OF grammatical mistakes (((
 public class MainActivity extends AppCompatActivity implements OnItemClickListener,
         View.OnClickListener {
 
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        assert toolbar != null;
+        assert toolbar != null; //[Comment] use if statement
         toolbar.setNavigationIcon(R.drawable.button_back);
         toolbar.setTitle(R.string.title);
         setSupportActionBar(toolbar);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
             }
         });
 
-        ArrayList<Uri> photos = new ArrayList<>();
+        ArrayList<Uri> photos = new ArrayList<>(); //[Comment] Use abstraction instead of realization
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_1)));
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_2)));
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_3)));
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
         TextView tvOffer = (TextView) findViewById(R.id.tvOffer);
         TextView tvDescription = (TextView) findViewById(R.id.tvDescription);
-        if (tvOffer != null) {
+        if (tvOffer != null) { //[Comment] It can be null?
             tvOffer.setOnClickListener(this);
         }
         if (tvDescription != null) {
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
             case R.id.tvOffer:
                 Toast.makeText(MainActivity.this, getResources()
-                        .getString(R.string.offer), Toast.LENGTH_SHORT).show();
+                        .getString(R.string.offer), Toast.LENGTH_SHORT).show(); //[Comment] Wrong info. Show control name
                 break;
 
             case R.id.tvDescription:

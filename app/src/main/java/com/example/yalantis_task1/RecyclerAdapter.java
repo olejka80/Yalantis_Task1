@@ -37,7 +37,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
                 .load(mPhoto.get(position))
                 .error(R.mipmap.ic_launcher)
                 .placeholder(R.mipmap.ic_launcher)
-                .resize(800, 700)
+                .resize(800, 700) //[Comment] Magic numbers
                 .centerCrop()
                 .into(viewHolder.ivPhoto);
 
