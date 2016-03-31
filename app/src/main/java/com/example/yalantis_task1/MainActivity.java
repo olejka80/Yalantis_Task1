@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (toolbar != null) {
             toolbar.setNavigationIcon(R.drawable.button_back);
             toolbar.setTitle(R.string.title);
+        }
+
+        setSupportActionBar(toolbar);
+
+        if (toolbar != null) {
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -32,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             });
         }
-        setSupportActionBar(toolbar);
 
         List<Uri> photos = new ArrayList<>();
         photos.add(Uri.parse(getResources().getString(R.string.uri_photo_1)));
