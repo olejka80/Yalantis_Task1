@@ -1,24 +1,26 @@
 <resources>
     <string name="app_name" translatable="false">Yalantis_Task1</string>
+
     <string name="title">УКРАЇНА</string>
-    <string name="valid_until">Діє до</string>
-    <string name="cost_of">Вартість</string>
-    <string name="transport">Проїзд</string>
-    <string name="offer">Гаряча</string>
-    <string name="city">Львів</string>
-    <string name="phone">тел.:</string>
-    <string name="included">Входить</string>
-    <string name="date">26.03.2016</string>
-    <string name="uah">1 500 грн</string>
-    <string name="number" translatable="false">(056) 322–22–33</string>
-    <string name="description">Львів - місто, яке зачаровує з першого погляду.
-       Це одне із найпрекрасніших міст Європи.</string>
-    <string name="button_back">Назад</string>
-    <string name="photo_number">Фото №</string>
-    <string name="descr">Опис міста</string>
-    <string name="uri_photo_1">http://wyr.com.ua/files/lviv/jura_9.jpg</string>
-    <string name="uri_photo_2">http://vsitury.com.ua/uploads/48/2588/P5.jpg</string>
-    <string name="uri_photo_3">http://vsitury.com.ua/uploads/48/2786/P2.jpg</string>
-    <string name="uri_photo_4">http://visittoukraine.com/uploads/images/news/lvov(3).jpg</string>
-    <string name="uri_photo_5">http://vsitury.com.ua/uploads/107/3175/P4.jpg</string>
+    <string name="custom_text_view_offer">Гаряча</string>
+
+    <string name="hint_valid_until">Діє до</string>
+    <string name="hint_cost_of">Вартість</string>
+    <string name="hint_transport">Проїзд</string>
+    <string name="hint_phone">тел.:</string>
+
+
+    <string name="text_city">Львів</string>
+    <string name="text_included">Входить</string>
+    <string name="text_date">26.03.2016</string>
+    <string name="text_uah">1 500 грн</string>
+    <string name="text_number" translatable="false">(056) 322–22–33</string>
+    <string name="text_description">Львів - місто, яке зачаровує з першого погляду.
+       Це одне із найпрекрасніших міст Європи. Приїжджайте до Львова, ви не пошкодуєте. </string>
+
+    <string name="uri_photo_1" translatable="false">http://wyr.com.ua/files/lviv/jura_9.jpg</string>
+    <string name="uri_photo_2" translatable="false">http://vsitury.com.ua/uploads/48/2588/P5.jpg</string>
+    <string name="uri_photo_3" translatable="false">http://vsitury.com.ua/uploads/48/2786/P2.jpg</string>
+    <string name="uri_photo_4" translatable="false">http://visittoukraine.com/uploads/images/news/lvov(3).jpg</string>
+    <string name="uri_photo_5" translatable="false">http://vsitury.com.ua/uploads/107/3175/P4.jpg</string>
 </resources>

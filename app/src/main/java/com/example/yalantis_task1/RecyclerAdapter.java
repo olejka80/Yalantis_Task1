@@ -7,20 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter {
-    private ArrayList<Uri> mPhoto;
+    private List<Uri> mPhoto;
     private Context mContext;
-    private OnItemClickListener mListener;
 
-    public RecyclerAdapter(ArrayList<Uri> photos, Context context, OnItemClickListener listener) {
+    public RecyclerAdapter(List<Uri> photos, Context context) {
         mPhoto = photos;
         mContext = context;
-        mListener = listener;
     }
 
     @Override
@@ -33,23 +32,22 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         ViewHolder viewHolder = (ViewHolder) holder;
+        final int PHOTO_WIDTH = 800;
+        final int PHOTO_HEIGHT = 700;
         Picasso.with(mContext)
                 .load(mPhoto.get(position))
                 .error(R.mipmap.ic_launcher)
                 .placeholder(R.mipmap.ic_launcher)
-                .resize(800, 700)
+                .resize(PHOTO_WIDTH, PHOTO_HEIGHT)
                 .centerCrop()
                 .into(viewHolder.ivPhoto);
 
         viewHolder.ivPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mListener != null) {
-                    mListener.OnPhotoClick(position);
-                }
+                Toast.makeText(mContext, v.getClass().getSimpleName(), Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     @Override
