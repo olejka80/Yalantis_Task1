@@ -16,6 +16,8 @@ import java.util.List;
 public class RecyclerAdapter extends RecyclerView.Adapter {
     private List<Uri> mPhoto;
     private Context mContext;
+    private static final int PHOTO_WIDTH = 800;
+    private static final int PHOTO_HEIGHT = 700;
 
     public RecyclerAdapter(List<Uri> photos, Context context) {
         mPhoto = photos;
@@ -32,8 +34,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         ViewHolder viewHolder = (ViewHolder) holder;
-        final int PHOTO_WIDTH = 800;
-        final int PHOTO_HEIGHT = 700;
+        
         Picasso.with(mContext)
                 .load(mPhoto.get(position))
                 .error(R.mipmap.ic_launcher)
@@ -61,7 +62,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         public ViewHolder(View itemView) {
             super(itemView);
             ivPhoto = (ImageView) itemView.findViewById(R.id.ivPhoto);
-
         }
     }
 }
